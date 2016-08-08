@@ -7,5 +7,5 @@ The LCCC Theme Framework is used for all Lorain County Community College website
 
 The framework consists of:
 ------
-*[Underscores from Automattic](http://underscores.me/)
-*[Foundation from Zurb](http://foundation.zurb.com/)
+* [Underscores from Automattic](http://underscores.me/)
+* [Foundation from Zurb](http://foundation.zurb.com/)
