@@ -165,3 +165,6 @@ require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/jetpack.php';
 */
 add_theme_support( 'post-thumbnails' );
+
+// Automatically make links clickable in the content editor.
+add_filter( 'the_content', 'make_clickable',      12 );
