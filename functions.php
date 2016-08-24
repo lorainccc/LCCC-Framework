@@ -112,6 +112,8 @@ function lccc_framework_scripts() {
 	
 	/*wp_enqueue_style( 'lccc-framework-custom-style', get_stylesheet_directory_uri() . '/framework-custom.css', array(), '1' );*/	
 	
+ 	wp_enqueue_style( 'genericons', get_template_directory_uri() . '/genericons/genericons.css', array(), '3.4.1' );
+ 
 	/* Add Foundation JS */
 	
 	wp_enqueue_script( 'foundation-js', get_template_directory_uri() . '/foundation/js/foundation.min.js', array( 'jquery' ), '1', true );
