@@ -131,6 +131,8 @@ function lccc_framework_scripts() {
 	/* ----- End Foundation Support ----- */
 		
 	wp_enqueue_style( 'lccc-framework-style', get_stylesheet_uri() );
+ 
+ wp_enqueue_style( 'lccc-print-framework-style', get_template_directory_uri() . '/print.css', array(), '', 'print' );
 	
 	wp_enqueue_script( 'lccc-framework-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 

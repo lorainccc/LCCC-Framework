@@ -1,0 +1,8 @@
+a[href]:after {
+ content: none !important;
+}
+
+
+.breadcrumb-container{
+ padding: 10px !important;
+}
