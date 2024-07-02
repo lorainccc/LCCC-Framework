@@ -1,0 +1,12 @@
+.mb-buttons{
+ color: #000;
+ border: 1px solid #000;
+}
+
+a[href]:after {
+ content: none !important;
+}
+
+.breadcrumb-container{
+ padding: 10px !important;
+}
