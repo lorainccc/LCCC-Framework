@@ -22,8 +22,8 @@ get_header(); ?>
 
 					<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
 
-					<?php if ( lccc_framework_categorized_blog() ) : // Only show the widget if site has multiple categories. ?>
-					<div class="widget widget_categories">
+					<?php //if ( lccc_framework_categorized_blog() ) : // Only show the widget if site has multiple categories. ?>
+					<!--<div class="widget widget_categories">
 						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'lccc-framework' ); ?></h2>
 						<ul>
 						<?php
@@ -36,8 +36,8 @@ get_header(); ?>
 							) );
 						?>
 						</ul>
-					</div><!-- .widget -->
-					<?php endif; ?>
+					</div>--><!-- .widget -->
+					<?php //endif; ?>
 
 					<?php
 						/* translators: %1$s: smiley */

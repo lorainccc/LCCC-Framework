@@ -172,3 +172,23 @@ add_theme_support( 'post-thumbnails' );
 
 // Automatically make links clickable in the content editor.
 add_filter( 'the_content', 'make_clickable',      12 );
+
+// Remove Emoji Support
+remove_action('wp_head', 'print_emoji_detection_script', 7);
+remove_action('wp_print_styles', 'print_emoji_styles');
+
+remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
+remove_action( 'admin_print_styles', 'print_emoji_styles' );
+
+
+// Exclude Multiple Content Types From Yoast SEO Sitemap
+add_filter( 'wpseo_sitemap_exclude_post_type', 'sitemap_exclude_post_type', 10, 2 );
+function sitemap_exclude_post_type( $value, $post_type ) {
+$post_type_to_exclude = array('attachment','spotlights', 'highlight', 'dashboard_icons', 'badges');
+if( in_array( $post_type, $post_type_to_exclude ) ) return true;
+}
+
+// Exclude Authors From Yoast SEO Sitemap
+add_filter( 'wpseo_sitemap_exclude_author', function () {
+    return [];
+});
